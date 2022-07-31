@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 async function fetchAPI() {
-    const base_url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=dca8fd5800284138adc5c6a934c0a3f1`;
+    const base_url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="use your own api key from google news api"`;
     const response = await fetch(base_url);
     const data = await response.json();
     displayArticles(data.articles)
